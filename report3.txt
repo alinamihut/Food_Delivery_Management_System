@@ -1,0 +1,6 @@
+REPORT 3: 
+----------------------------------------
+Clients that ordered more than: 11 times 
+ and the value of the order was higher than 0client 2
+client -1
+client -1

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Client">
+    <children>
+        <Label layoutX="350.0" layoutY="14.0" prefHeight="18.0" prefWidth="261.0" text="You are now logged in as client">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TableView fx:id="tBaseProducts" layoutX="19.0" layoutY="93.0" onMouseClicked="#handleClickTableView" prefHeight="320.0" prefWidth="417.0" />
+      <TableView fx:id="tbCompositeProducts" layoutX="488.0" layoutY="93.0" onMouseClicked="#handleClickTableViewComposite" prefHeight="320.0" prefWidth="406.0" />
+      <Label layoutX="19.0" layoutY="65.0" text="Base products:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" layoutY="65.0" text="Composite products:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfName" layoutX="153.0" layoutY="435.0" />
+      <TextField fx:id="tfPrice" layoutX="153.0" layoutY="478.0" />
+      <TextField fx:id="tfRating" layoutX="153.0" layoutY="516.0" />
+      <TextField fx:id="tfCalories" layoutX="153.0" layoutY="556.0" />
+      <TextField fx:id="tfProtein" layoutX="153.0" layoutY="595.0" />
+      <Label layoutX="90.0" layoutY="438.0" text="Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="559.0" text="Calories:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="481.0" text="Price:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="519.0" text="Rating:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="598.0" text="Protein:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfFat" layoutX="153.0" layoutY="629.0" />
+      <TextField fx:id="tfSodium" layoutX="153.0" layoutY="666.0" />
+      <Label layoutX="90.0" layoutY="632.0" text="Fat:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="669.0" text="Sodium:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="85.0" layoutY="699.0" mnemonicParsing="false" onAction="#search" prefHeight="37.0" prefWidth="218.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tbOrders" layoutX="487.0" layoutY="435.0" prefHeight="247.0" prefWidth="406.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnOrder" layoutX="582.0" layoutY="699.0" mnemonicParsing="false" onAction="#makeOrder" prefHeight="37.0" prefWidth="218.0" text="Order">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Back" onAction="#goBack">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

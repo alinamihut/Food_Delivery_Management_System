@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="383.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Controller">
+   <children>
+      <TextField fx:id="tfUsername" layoutX="195.0" layoutY="127.0" prefHeight="26.0" prefWidth="183.0" />
+      <PasswordField fx:id="pfPassword" layoutX="195.0" layoutY="158.0" prefHeight="26.0" prefWidth="183.0" />
+      <ComboBox fx:id="cbType" layoutX="195.0" layoutY="191.0" prefHeight="26.0" prefWidth="183.0" >
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="administrator"/>
+               <String fx:value="employee"/>
+               <String fx:value="client"/>
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label layoutX="85.0" layoutY="129.0" prefHeight="18.0" prefWidth="85.0" text="Username:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="160.0" prefHeight="20.0" prefWidth="78.0" text="Password:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="193.0" text="Type of user:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSignUp" layoutX="240.0" layoutY="273.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" text="Sign up" onAction="#registerNewUser" />
+      <Button fx:id="btnLogIn" layoutX="73.0" layoutY="273.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="137.0" text="Log in" onAction="#logIn"/>
+   </children>
+</AnchorPane>

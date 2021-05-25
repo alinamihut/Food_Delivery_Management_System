@@ -1,0 +1,13 @@
+The details of your order: 
+----------------------------------------
+ 
+ ORDER ID:5
+DATE :25.5.2021 22:43:31
+CLIENT:3
+PRODUCT: tuesday special menu
+PRICE: 247
+PRODUCT: Ethiopian Spice Tea 
+PRICE: 49
+TOTAL PRICE:296
+----------------------------------------
+Thank you for your purchase 
