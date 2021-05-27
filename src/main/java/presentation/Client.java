@@ -153,7 +153,7 @@ public class Client implements Initializable {
             int month = LocalDate.now().getMonth().getValue();
             int year = LocalDate.now().getYear();
             bussiness.Date date = new Date( day, month, year, hour, minutes, seconds);
-            Order newOrder = new Order(orderID, clientID, date);
+            Order newOrder = new Order(orderID, 2, date);
             deliveryService.makeNewOrder(newOrder, itemsFromOrder);
             Administrator.showConformationAlert("New order is now in process by the employees!");
 

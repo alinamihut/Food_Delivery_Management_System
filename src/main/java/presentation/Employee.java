@@ -46,7 +46,7 @@ public class Employee implements Initializable {
         column2.setCellValueFactory(new PropertyValueFactory<Order, Integer>("clientID"));
         TableColumn column3 = new TableColumn("Date");
         column3.setCellValueFactory(new PropertyValueFactory<Order, String>("OrderDateString"));
-        //Adding data to the table
+
         ObservableList<Order> list = FXCollections.observableArrayList(listOfObjects);
         table.setItems(list);
         table.getColumns().addAll(column1,column2, column3);

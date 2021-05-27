@@ -6,7 +6,7 @@
 
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
-<AnchorPane prefHeight="383.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Controller">
+<AnchorPane prefHeight="383.0" prefWidth="480.0"  style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Controller">
    <children>
       <TextField fx:id="tfUsername" layoutX="195.0" layoutY="127.0" prefHeight="26.0" prefWidth="183.0" />
       <PasswordField fx:id="pfPassword" layoutX="195.0" layoutY="158.0" prefHeight="26.0" prefWidth="183.0" />

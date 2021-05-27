@@ -1,13 +1,15 @@
 The details of your order: 
 ----------------------------------------
  
- ORDER ID:6
-DATE :27.5.2021 0:5:7
+ ORDER ID:8
+DATE :27.5.2021 19:2:5
 CLIENT:2
 PRODUCT: Barbecued Shrimp 
 PRICE: 71
-PRODUCT: Vanilla-Citrus Tea Ring 
-PRICE: 49
-TOTAL PRICE:120
+PRODUCT: Red and Green Tomato Salsa 
+PRICE: 38
+PRODUCT: Shrimp Sates with Spiced Pistachio Chutney 
+PRICE: 78
+TOTAL PRICE:187
 ----------------------------------------
 Thank you for your purchase 

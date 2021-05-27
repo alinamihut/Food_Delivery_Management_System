@@ -111,7 +111,6 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
     public void makeNewOrder (Order order, ArrayList<MenuItem> orderedItems){
        orders = Serializator.deserializeOrders();
        order.setOrderID(orders.size()+1);
-       order.setClientID(2);
         orders.put(order, orderedItems);
         Serializator.serializeOrders((HashMap<Order, ArrayList<MenuItem>>) orders);
         try {
@@ -120,6 +119,8 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
             e.printStackTrace();
         }
     }
+
+
     public ArrayList<Order> getArrayOfOrders(){
        orders = Serializator.deserializeOrders();
        Set<Order> ordersSet = orders.keySet();

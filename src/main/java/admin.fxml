@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="565.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Administrator">
+<AnchorPane prefHeight="565.0" prefWidth="772.0" style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Administrator">
    <children>
       <Label layoutX="210.0" layoutY="14.0" prefHeight="26.0" prefWidth="324.0" text="You are now logged in as administrator">
          <font>
@@ -12,8 +12,8 @@
          </font></Label>
       <Button fx:id="btnImport" layoutX="335.0" layoutY="465.0" mnemonicParsing="false" onAction="#importProductsList" prefHeight="38.0" prefWidth="140.0" text="Import products list" />
       <Button fx:id="btnAddProduct" layoutX="553.0" layoutY="364.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="38.0" prefWidth="140.0" text="Add product" />
-      <Button fx:id="btnModifyProduct" layoutX="553.0" layoutY="410.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Modify product" onAction="#modifyProduct"  />
-      <Button fx:id="btnDeleteProduct" layoutX="553.0" layoutY="456.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Delete product" onAction="#deleteProduct" />
+      <Button fx:id="btnModifyProduct" layoutX="553.0" layoutY="410.0" mnemonicParsing="false" onAction="#modifyProduct" prefHeight="38.0" prefWidth="140.0" text="Modify product" />
+      <Button fx:id="btnDeleteProduct" layoutX="553.0" layoutY="456.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="38.0" prefWidth="140.0" text="Delete product" />
       <TextField fx:id="tfName" layoutX="562.0" layoutY="124.0" prefHeight="26.0" prefWidth="196.0" />
       <TextField fx:id="tfRating" layoutX="562.0" layoutY="154.0" prefHeight="26.0" prefWidth="196.0" />
       <Label layoutX="505.0" layoutY="128.0" prefHeight="18.0" prefWidth="58.0" text="Name:" />
@@ -28,14 +28,14 @@
       <Label layoutX="505.0" layoutY="273.0" prefHeight="18.0" prefWidth="58.0" text="Sodium:" />
       <TextField fx:id="tfPrice" layoutX="562.0" layoutY="299.0" prefHeight="26.0" prefWidth="196.0" />
       <Label layoutX="501.0" layoutY="303.0" prefHeight="18.0" prefWidth="66.0" text="Price:" />
-      <Button fx:id="btnGenerateReports" layoutX="34.0" layoutY="465.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Generate reports"  onAction="#goToReportsScene"/>
-      <Button fx:id="btnCreateProduct" layoutX="185.0" layoutY="465.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="140.0" text="Create new product"  onAction="#goToCompositeProductScene"/>
+      <Button fx:id="btnGenerateReports" layoutX="34.0" layoutY="465.0" mnemonicParsing="false" onAction="#goToReportsScene" prefHeight="38.0" prefWidth="140.0" text="Generate reports" />
+      <Button fx:id="btnCreateProduct" layoutX="185.0" layoutY="465.0" mnemonicParsing="false" onAction="#goToCompositeProductScene" prefHeight="38.0" prefWidth="140.0" text="Create new product" />
       <TableView fx:id="tableMenu" layoutX="19.0" layoutY="117.0" onMouseClicked="#handleClickTableView" prefHeight="339.0" prefWidth="462.0">
         <columns>
           <TableColumn prefWidth="75.0" />
           <TableColumn prefWidth="75.0" />
         </columns>
       </TableView>
-      <Button fx:id="btnBack" layoutX="23.0" layoutY="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Back" onAction="#goBack" />
+      <Button fx:id="btnBack" layoutX="23.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="133.0" text="Back" />
    </children>
 </AnchorPane>

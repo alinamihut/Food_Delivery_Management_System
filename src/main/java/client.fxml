@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Client">
+<AnchorPane prefHeight="750.0" prefWidth="930.0" style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.Client">
     <children>
         <Label layoutX="350.0" layoutY="14.0" prefHeight="18.0" prefWidth="261.0" text="You are now logged in as client">
          <font>
