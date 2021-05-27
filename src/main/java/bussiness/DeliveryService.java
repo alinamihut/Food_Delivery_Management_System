@@ -27,7 +27,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
             InputStream inputFS = new FileInputStream(inputF);
             BufferedReader br = new BufferedReader(new InputStreamReader(inputFS));
 
-            // skip the header of the csv
+
             inputList = br.lines().skip(1).map(mapToItem).distinct().collect(Collectors.toList());
             Serializator.serializeBaseProducts((ArrayList<BaseProduct>) inputList);
             br.close();
@@ -35,10 +35,6 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
             e.printStackTrace();
         }
 
-        //createMenu();
-        //for (BaseProduct b:inputList){
-        //    System.out.println( "name " + b.getName() + "price " + b.getPrice() + "rating" + b.getRating() + "calories" + b.getCalories() + "fats" + b.getFats() + "proteins"  + b.getProteins() + "sodium" +b.getSodium());
-       // }
     }
     public Function<String, BaseProduct> mapToItem = (line) -> {
 
@@ -54,11 +50,6 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
 
         product.setName(p[0]);
         product.setPrice(Integer.parseInt(p[6]));
-        //try {
-          //  Serializator.serializeBaseProduct(product);
-        //} catch (IOException e) {
-          //  e.printStackTrace();
-        //}
         return product;
     };
 
@@ -96,11 +87,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
         Serializator.serializeBaseProducts(menuItems);
     }
     public static void deleteMenuItem(BaseProduct baseProduct, ArrayList<BaseProduct> menuItems) throws IOException, ClassNotFoundException {
-       // menuItems = (ArrayList<BaseProduct>) Serializator.deserializeBaseProducts();
-        //menuItems.remove(baseProduct);
-        //System.out.println( "name " + baseProduct.getName() + "price " + baseProduct.getPrice() + "rating" + baseProduct.getRating() + "calories" + baseProduct.getCalories() + "fats" + baseProduct.getFats() + "proteins"  + baseProduct.getProteins() + "sodium" +baseProduct.getSodium());
-        //   System.out.println( "name " + b.getName() + "price " + b.getPrice() + "rating" + b.getRating() + "calories" + b.getCalories() + "fats" + b.getFats() + "proteins"  + b.getProteins() + "sodium" +b.getSodium());
-        menuItems.removeIf(b -> b.equals(baseProduct));
+               menuItems.removeIf(b -> b.equals(baseProduct));
         Serializator.serializeBaseProducts(menuItems);
     }
 
@@ -124,7 +111,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
     public void makeNewOrder (Order order, ArrayList<MenuItem> orderedItems){
        orders = Serializator.deserializeOrders();
        order.setOrderID(orders.size()+1);
-       order.setClientID(3);
+       order.setClientID(2);
         orders.put(order, orderedItems);
         Serializator.serializeOrders((HashMap<Order, ArrayList<MenuItem>>) orders);
         try {
@@ -241,8 +228,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
                     }
                     )
                 );
-       //productsCount = productsCount.entrySet().stream().filter(( map -> map.getValue().intValue() > Integer.parseInt(tfTimes.getText())));
-    for (Map.Entry <MenuItem, AtomicInteger> entry: productsCount.entrySet()) {
+        for (Map.Entry <MenuItem, AtomicInteger> entry: productsCount.entrySet()) {
         if (entry.getValue().intValue() > Integer.parseInt(tfTimes.getText())) {
             filteredProducts.add(entry.getKey());
         }

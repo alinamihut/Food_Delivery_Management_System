@@ -87,7 +87,6 @@ public class Controller {
                             isEmployee = true;
                         }
                         user.setType(data);
-                        //Client client = new Client(user);
                         return true;
                     }
                 }
@@ -117,7 +116,6 @@ public class Controller {
                     window.setScene(sceneProducts);
                     window.setTitle("Administrator");
                     window.show();
-                    //ArrayList <BaseProduct> menuItems = Serializator.deserializeBaseProducts();
                 }
                 else if (isEmployee){
                     URL url= new File("src/main/java/employee.fxml").toURI().toURL();
@@ -132,7 +130,6 @@ public class Controller {
                 }
                 else if (isClient){
 
-                   // client.createTables();
                     URL url= new File("src/main/java/client.fxml").toURI().toURL();
                     Parent root= FXMLLoader.load(url);
                     Scene sceneOrders = new Scene(root);

@@ -45,7 +45,6 @@ public class CompositeProductController {
     }
 
     public void setValueForComboBox1 () throws IOException{
-      //  deliveryService.parseProductsCSV();
             ArrayList<BaseProduct> menuItems = (ArrayList<BaseProduct>) deliveryService.createMenu();
             cb1.getItems().clear();
             for (BaseProduct bp:menuItems){

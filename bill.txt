@@ -1,13 +1,13 @@
 The details of your order: 
 ----------------------------------------
  
- ORDER ID:5
-DATE :25.5.2021 22:43:31
-CLIENT:3
-PRODUCT: tuesday special menu
-PRICE: 247
-PRODUCT: Ethiopian Spice Tea 
+ ORDER ID:6
+DATE :27.5.2021 0:5:7
+CLIENT:2
+PRODUCT: Barbecued Shrimp 
+PRICE: 71
+PRODUCT: Vanilla-Citrus Tea Ring 
 PRICE: 49
-TOTAL PRICE:296
+TOTAL PRICE:120
 ----------------------------------------
 Thank you for your purchase 

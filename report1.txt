@@ -1,14 +1,15 @@
 REPORT 1: 
 ----------------------------------------
 Orders made between: 
- Start hour: 00 End hour:23ORDER ID: 1
-ORDER DATE: 25/5/2021 0:45:37
-ITEMS : [ name: The Original Three-Ingredient Rub  price: 47
-,  name: Red and Green Tomato Salsa  price: 38
-]ORDER ID: 1
-ORDER DATE: 25/5/2021 0:42:36
-ITEMS : [ name: Barbecued Shrimp  price: 71
-,  name: Cauliflower-Leek Purée  price: 13
-,  name: Red Pepper Sauce  price: 62
-,  name: daily menu 1 price: 173
+ Start hour: 22 End hour:23
+ORDER ID: 4
+ORDER DATE: 25/5/2021 22:41:59
+ITEMS : [ name: Spicy Pickled Shallots  price: 78
+,  name: Scallion Cilantro Pancakes  price: 71
+,  name: Tomato Salsa  price: 42
+,  name: Ginger Tea  price: 81
+]ORDER ID: 5
+ORDER DATE: 25/5/2021 22:43:31
+ITEMS : [ name: tuesday special menu price: 247
+,  name: Ethiopian Spice Tea  price: 49
 ]

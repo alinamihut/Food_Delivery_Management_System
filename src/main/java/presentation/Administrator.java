@@ -48,13 +48,8 @@ public class Administrator {
 
        deliveryService.parseProductsCSV();
        showConformationAlert("The products list was imported successfully!");
-      // deliveryService.showProducts();
-       // menuItems = deliveryService.createMenu();
-        menuItems = (ArrayList<BaseProduct>) Serializator.deserializeBaseProducts();
-       // for (BaseProduct b:menuItems){
-        //    System.out.println( "name " + b.getName() + "price " + b.getPrice() + "rating" + b.getRating() + "calories" + b.getCalories() + "fats" + b.getFats() + "proteins"  + b.getProteins() + "sodium" +b.getSodium());
-        //}
-        createTable(menuItems, tableMenu);
+             menuItems = (ArrayList<BaseProduct>) Serializator.deserializeBaseProducts();
+             createTable(menuItems, tableMenu);
     }
 
     public void addProduct (ActionEvent actionEvent) throws IOException, ClassNotFoundException {
@@ -79,8 +74,6 @@ public class Administrator {
         BaseProduct oldBaseProduct;
         oldBaseProduct= (BaseProduct) tableMenu.getSelectionModel().getSelectedItem();
         String name = tfName.getText();
-        //System.out.println("old product");
-        //System.out.println( "name " + oldBaseProduct.getName() + "price " + oldBaseProduct.getPrice() + "rating" + oldBaseProduct.getRating() + "calories" + oldBaseProduct.getCalories() + "fats" + oldBaseProduct.getFats() + "proteins"  + oldBaseProduct.getProteins() + "sodium" +oldBaseProduct.getSodium());
         double rating = Double.parseDouble(tfRating.getText());
         int calories = Integer.parseInt(tfCalories.getText());
         int fats = Integer.parseInt(tfFats.getText());
@@ -114,7 +107,7 @@ public class Administrator {
         menuItems= (ArrayList<BaseProduct>) Serializator.deserializeBaseProducts();
 
         createTable(menuItems, tableMenu);
-      // tableMenu.refresh();
+
     }
 
     public static void createTable(ArrayList<BaseProduct> listOfObjects, TableView<BaseProduct> table){
@@ -144,14 +137,15 @@ public class Administrator {
     public void handleClickTableView(javafx.scene.input.MouseEvent mouseEvent) {
             BaseProduct baseProduct;
             baseProduct = (BaseProduct) tableMenu.getSelectionModel().getSelectedItem();
-            tfName.setText(baseProduct.getName());
-            tfCalories.setText(String.valueOf(baseProduct.getCalories()));
-            tfFats.setText(String.valueOf(baseProduct.getFats()));
-            tfProteins.setText(String.valueOf(baseProduct.getProteins()));
-            tfSodium.setText(String.valueOf(baseProduct.getSodium()));
-            tfPrice.setText(String.valueOf(baseProduct.getPrice()));
-            tfRating.setText(String.valueOf(baseProduct.getRating()));
-
+            if (baseProduct!= null) {
+                tfName.setText(baseProduct.getName());
+                tfCalories.setText(String.valueOf(baseProduct.getCalories()));
+                tfFats.setText(String.valueOf(baseProduct.getFats()));
+                tfProteins.setText(String.valueOf(baseProduct.getProteins()));
+                tfSodium.setText(String.valueOf(baseProduct.getSodium()));
+                tfPrice.setText(String.valueOf(baseProduct.getPrice()));
+                tfRating.setText(String.valueOf(baseProduct.getRating()));
+            }
 
     }
     public static void showConformationAlert(String s) {

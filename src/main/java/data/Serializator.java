@@ -30,8 +30,7 @@ public static ArrayList deserializeBaseProducts() throws IOException, ClassNotFo
     baseProducts = (ArrayList)in.readObject();
     in.close();
     file.close();
-   // System.out.println( "name " + baseProduct.getName() + "price " + baseProduct.getPrice() + "rating" + baseProduct.getRating() + "calories" + baseProduct.getCalories() + "fats" + baseProduct.getFats() + "proteins"  + baseProduct.getProteins() + "sodium" +baseProduct.getSodium());
-    return baseProducts;
+      return baseProducts;
 }
     public static void serializeComposedProducts(ArrayList<CompositeProduct> compositeProducts) throws IOException {
         FileOutputStream file = new FileOutputStream ("src\\main\\resources\\compositeproducts.ser");
@@ -50,8 +49,7 @@ public static ArrayList deserializeBaseProducts() throws IOException, ClassNotFo
         composedProducts= (ArrayList)in.readObject();
         in.close();
         file.close();
-        // System.out.println( "name " + baseProduct.getName() + "price " + baseProduct.getPrice() + "rating" + baseProduct.getRating() + "calories" + baseProduct.getCalories() + "fats" + baseProduct.getFats() + "proteins"  + baseProduct.getProteins() + "sodium" +baseProduct.getSodium());
-        return composedProducts;
+               return composedProducts;
     }
     public static void serializeOrders(HashMap<Order, ArrayList<MenuItem>> orders) {
     try {
@@ -81,9 +79,8 @@ public static ArrayList deserializeBaseProducts() throws IOException, ClassNotFo
             in.close();
             file.close();
         }catch (IOException | ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-        // System.out.println( "name " + baseProduct.getName() + "price " + baseProduct.getPrice() + "rating" + baseProduct.getRating() + "calories" + baseProduct.getCalories() + "fats" + baseProduct.getFats() + "proteins"  + baseProduct.getProteins() + "sodium" +baseProduct.getSodium());
-        return orders;
+                e.printStackTrace();
+            }
+            return orders;
     }
 }

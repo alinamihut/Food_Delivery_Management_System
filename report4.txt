@@ -1,14 +1,15 @@
 REPORT 4 : 
 ----------------------------------------
-Products ordered on 25/5/2021Scallion Cilantro Pancakes  ordered 1 times
-Barbecued Shrimp  ordered 1 times
+Products ordered on 25/05/2021 
+Scallion Cilantro Pancakes  ordered 1 times
 tuesday special menu ordered 1 times
+Barbecued Shrimp  ordered 1 times
 Ginger Tea  ordered 1 times
 Spicy Pickled Shallots  ordered 2 times
 daily menu 1 ordered 1 times
 Cauliflower-Leek Purée  ordered 2 times
 Tomato Salsa  ordered 1 times
-The Original Three-Ingredient Rub  ordered 1 times
 Red Pepper Sauce  ordered 1 times
+The Original Three-Ingredient Rub  ordered 1 times
 Ethiopian Spice Tea  ordered 1 times
 Red and Green Tomato Salsa  ordered 2 times

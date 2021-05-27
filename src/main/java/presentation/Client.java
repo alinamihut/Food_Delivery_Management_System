@@ -49,15 +49,12 @@ public class Client implements Initializable {
         createMenuItems();
         createTableBaseProducts(baseMenuItems,tBaseProducts);
         createTableComposite(compositeMenuItems,tbCompositeProducts);
-       //createTable(baseMenuItems,tBaseProducts);
+
     }
 
     public void createMenuItems() throws IOException, ClassNotFoundException {
-        //compositeMenuItems = DeliveryService.getComposedMenuItem();
         baseMenuItems = Serializator.deserializeBaseProducts();
         compositeMenuItems = Serializator.deserializeComposedProducts();
-
-       // baseMenuItems = DeliveryService.getBasedMenuItem();
     }
     public static void createTableBaseProducts(ArrayList<BaseProduct> listOfObjects, TableView<BaseProduct> table){
         table.getItems().clear();
